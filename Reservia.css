@@ -1,15 +1,19 @@
 body {
     font-family: 'Raleway', sans-serif;
 }
+
 header {
     display: flex;
 }
+
 header>div {
     display: flex;
 }
+
 .logo-header {
     width: 75%;
 }
+
 .header-links {
     width: 19%;
     align-items: center;
@@ -17,57 +21,92 @@ header>div {
     display: flex;
     color: blue;
 }
+
 .active {
     border-top: 1px blue solid;
 }
+
 .logo {
     height: 50px;
 }
+
 #search-bar {
     border-radius: 3px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 button>span {
     display: block;
 }
-button>i.fas {
+
+#search-bar button>i.fas {
     display: none;
 }
+
 #filters {
     display: flex;
     align-content: space-evenly;
 }
+
 #filters>div {
     padding-right: 20px;
 }
+
 .filter {
-    padding: 3px;
-    margin: 3px;
-    display: flex;
-    flex-direction: row;
+
+    margin: 10px;
+    display: inline-block;
+    inline-size: fit-content;
 }
-.blue {
+
+.filter-icon button {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    border: 2px solid lightgray;
+    border-radius: 35px;
+    outline: none;
+    background-color: white;
+    padding: 0px 20px;
+    cursor: pointer;
+
+}
+
+.filter-icon button i {
+    position: relative;
+    border-radius: 50%;
+    align-items: center;
+    padding: 15px;
+    background-color: #DEEBFF;
+    left: -21px;
+    color: blue;
+}
+
+/* .blue {
     color: #0065fc;
-}
+} */
 .gray {
     color: #d9d9d9;
 }
-.filter-icon {
+
+/* .filter-icon {
     border-radius: 20px;
     background-color: #deebff;
     padding: 3px;
-}
+} */
 .accomodation-resize {
     object-fit: cover;
     width: 100%;
     height: 200px;
 }
+
 #accomodations {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 #accomodations-background {
     background-color: #F2F2F2;
     border-radius: 10px;
@@ -77,11 +116,13 @@ button>i.fas {
     margin: 10px;
     object-fit: contain;
 }
+
 #top {
     display: flex;
     flex-wrap: wrap-reverse;
     flex-direction: row;
 }
+
 #popular-background {
     background-color: #F2F2F2;
     border-radius: 10px;
@@ -89,120 +130,144 @@ button>i.fas {
     padding: 10px;
     margin: 10px auto;
 }
+
 section#top {
     display: flex;
 }
+
 .popular-card {
     display: flex;
     flex-direction: row;
     width: auto;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.2s;
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
 }
+
 .popular-resize {
     height: 200px;
     width: 200px;
     object-fit: cover;
 }
-.popular-card:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+.popular-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
 .popular-card>div {
     justify-content: space-between;
 }
+
 .accomodation-card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.2s;
     border-radius: 5px;
     width: 380px;
     margin: 5px;
     padding: 5px;
 }
+
 .accomodation-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 #activities-flex {
     display: flex;
     justify-content: space-around;
     align-items: space-between;
 }
-#activities-flex>div{
+
+#activities-flex>div {
     width: 23%;
 }
+
 .image-resize {
     max-width: 100%;
     object-fit: cover;
     min-height: 490.79px;
 }
+
 .image-resize-half {
     min-width: 100%;
     object-fit: cover;
     max-height: 200px;
 }
-.card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.2s;
     border-radius: 5px;
     min-width: 100%;
     margin: 5px;
 }
+
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-.card img{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
     border-radius: 5px 5px 0 0;
 }
+
 .half {
     display: flex;
     flex-direction: column;
     align-items: space-between;
 }
-  footer {
+
+footer {
     background-color: #F2F2F2;
     display: flex;
 }
+
 footer div {
     flex: auto;
     line-height: 25px;
     margin: 20px;
 }
+
 ul {
     list-style-type: none;
     justify-content: left;
     padding: 0;
 }
- 
-@media screen and (max-width : 320px){
-   
+
+@media screen and (max-width : 320px) {
+
     button>span {
         display: none;
     }
+
     button>i.fas {
         display: block;
     }
+
     #accomodation-background {
         order: 2;
         width: 100%;
     }
+
     #popular-background {
         width: 100%;
     }
+
     .popular-card {
         flex-wrap: wrap;
     }
+
     footer {
         flex-wrap: wrap;
     }
 }
+
 @media screen and (max-width: 768px) {
-    #activities-flex{
+    #activities-flex {
         flex-wrap: wrap;
     }
-    #activities-flex>div{
+
+    #activities-flex>div {
         width: auto;
     }
 }
-
