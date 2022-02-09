@@ -19,23 +19,27 @@ header>div {
     align-items: center;
     justify-content: space-between;
     display: flex;
-    color: blue;
 }
 
-.active {
+.active:hover {
     border-top: 1px blue solid;
+    color: blue;
+    cursor: pointer;
 }
-
+#register {
+    color:blue;
+}
 .logo {
     height: 50px;
 }
 
 #search-bar {
-    border-radius: 3px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+div>#search-bar {
+    height: 35px;
+}
 button>span {
     display: block;
 }
@@ -43,18 +47,39 @@ button>span {
 #search-bar button>i.fas {
     display: none;
 }
+#search-button {
+    color:white;
+    background-color:#0065fc;
+    height: 35px;
+    border-radius: 0px 8px 8px 0px;
+    border-width: 0px;
+}
+#search-button:hover {
+    cursor: pointer;
+}
+input {
+    height: 29px;
+}
+.fa-map-marker-alt {
+    height: 35px;
+    background: lightgray;
+    width: 25px;
+}
 
 #filters {
     display: flex;
-    align-content: space-evenly;
+    align-content: center;
+    font-weight: bold;
+    flex-wrap: wrap;
 }
 
 #filters>div {
     padding-right: 20px;
 }
-
+.heading {
+    padding-top: 12px;
+}
 .filter {
-
     margin: 10px;
     display: inline-block;
     inline-size: fit-content;
@@ -70,7 +95,6 @@ button>span {
     background-color: white;
     padding: 0px 20px;
     cursor: pointer;
-
 }
 
 .filter-icon button i {
@@ -83,18 +107,14 @@ button>span {
     color: blue;
 }
 
-/* .blue {
+.blue {
     color: #0065fc;
-} */
+}
+
 .gray {
     color: #d9d9d9;
 }
 
-/* .filter-icon {
-    border-radius: 20px;
-    background-color: #deebff;
-    padding: 3px;
-} */
 .accomodation-resize {
     object-fit: cover;
     width: 100%;
@@ -144,6 +164,7 @@ section#top {
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
+    background-color: white;
 }
 
 .popular-resize {
@@ -167,6 +188,7 @@ section#top {
     width: 380px;
     margin: 5px;
     padding: 5px;
+    background-color: white;
 }
 
 .accomodation-card:hover {
@@ -186,7 +208,7 @@ section#top {
 .image-resize {
     max-width: 100%;
     object-fit: cover;
-    min-height: 490.79px;
+    height: 490.79px;
 }
 
 .image-resize-half {
@@ -240,24 +262,41 @@ ul {
         display: none;
     }
 
-    button>i.fas {
+    button>i.fa-search {
         display: block;
     }
 
-    #accomodation-background {
+    #accomodations-background {
         order: 2;
         width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
     }
 
     #popular-background {
         width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
     }
-
+    .popular-resize {
+        max-height: 200px;
+        width: 280px;
+        object-fit: cover;
+    }
     .popular-card {
         flex-wrap: wrap;
     }
-
+    .image-resize {
+        max-height: 200px;
+    }
     footer {
+        flex-wrap: wrap;
+    }
+    #filter {
         flex-wrap: wrap;
     }
 }

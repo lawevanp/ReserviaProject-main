@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
- 
+
 <head>
     <meta name="viewport" content="width=device-width ,initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9ef9e6cda5.js" crossorigin="anonymous"></script>
@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
     <link href="Reservia.css" type="text/css" rel="stylesheet">
 </head>
- 
+
 <body>
     <header>
         <div class="logo-header"><img src="Images/logo/Reservia@3x.png" class="logo"></div>
@@ -17,37 +17,44 @@
             <div class="active">
                 <p>Accomodations</p>
             </div>
-            <div>
+            <div class="active">
                 <p>Activities</p>
             </div>
-            <div>
-                <p>Sign Up</p>
+            <div id="register" class="active">
+                <p><b>Sign Up</b></p>
             </div>
         </div>
     </header>
     <section id="search">
-        <h3>Find a place for your dream vacation</h3>
+        <h2>Find a place for your dream vacation</h2>
         <div>Downtown or in nature</div>
-        <div id="search-bar"><i class="fas fa-map-marker-alt"></i><input type="text" placeholder="Marseille, France"><button><span>Search</span>
+        <div id="search-bar"><i class="fas fa-map-marker-alt"></i><input type="text"
+                placeholder="Marseille, France"><button id="search-button"><span>Search</span>
                 <i class="fas fa-search"></i></button></div>
-        <div id="filters">
-            <div>Filters</div>
-            <div class="filter">
-                <div class="filter-icon">
-                   <button> <i class="fas fa-money-bill-wave blue"></i>  Low cost </button>
+        
+            <div id="filters">
+                <div class="filter heading">Filters</div>
+                <div class="filter">
+                    <div class="filter-icon">
+                        <button> <i class="fas fa-money-bill-wave blue"></i> Low cost </button>
+                    </div>
                 </div>
-               
+                <div class="filter">
+                    <div class="filter-icon">
+                        <button><i class="fas fa-child blue"></i>Family-friendly</button>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div class="filter-icon">
+                        <button><i class="fas fa-heart blue"></i>Romantic</button>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div class="filter-icon">
+                        <button><i class="fas fa-dog blue"></i>Pets</button>
+                    </div>
+                </div>
             </div>
-            <div class="filter">
-                <div class="filter-icon"><i class="fas fa-child blue"></i></div>Family-friendly
-            </div>
-            <div class="filter">
-                <div class="filter-icon"><i class="fas fa-heart blue"></i></div>Romantic
-            </div>
-            <div class="filter">
-                <div class="filter-icon"><i class="fas fa-dog blue"></i></div>Pets
-            </div>
-        </div>
         <div><i class="fas fa-info-circle blue"></i>More than 500 accomodations are available in this city</div>
     </section>
     <section id="top">
@@ -102,7 +109,7 @@
                         class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i
                         class="fas fa-star blue"></i>
                 </div>
- 
+
             </div>
             <footer><b>Show more</b></footer>
         </div>
@@ -210,6 +217,5 @@
         </div>
     </footer>
 </body>
- 
-</html>
 
+</html>
