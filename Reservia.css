@@ -4,21 +4,18 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
 }
 
 header>div {
     display: flex;
 }
 
-.logo-header {
-    width: 75%;
-}
-
 .header-links {
-    width: 19%;
+    width: 8%;
     align-items: center;
-    justify-content: space-between;
-    display: flex;
+    justify-content: space-evenly;
+    min-width: 120px;
 }
 
 .active:hover {
@@ -26,9 +23,11 @@ header>div {
     color: blue;
     cursor: pointer;
 }
+
 #register {
-    color:blue;
+    color: blue;
 }
+
 .logo {
     height: 50px;
 }
@@ -37,33 +36,39 @@ header>div {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 div>#search-bar {
     height: 35px;
 }
+
 button>span {
     display: block;
 }
 
-#search-bar button>i.fas {
-    display: none;
-}
+
 #search-button {
-    color:white;
-    background-color:#0065fc;
-    height: 35px;
+    color: white;
+    background-color: #0065fc;
+    padding: 10px;
     border-radius: 0px 8px 8px 0px;
     border-width: 0px;
 }
+
 #search-button:hover {
     cursor: pointer;
 }
+
 input {
-    height: 29px;
+    padding: 8px;
 }
+
 .fa-map-marker-alt {
-    height: 35px;
+    padding: 10px;
     background: lightgray;
-    width: 25px;
+    border-radius: 8px 0px 0px 8px;
+    position: relative;
+    top: 1px;
+    justify-content: center;
 }
 
 #filters {
@@ -76,9 +81,11 @@ input {
 #filters>div {
     padding-right: 20px;
 }
+
 .heading {
     padding-top: 12px;
 }
+
 .filter {
     margin: 10px;
     display: inline-block;
@@ -257,6 +264,19 @@ ul {
 }
 
 @media screen and (max-width : 320px) {
+    .logo-header {
+        order: -2;
+        min-width: 150px;
+    }
+
+    #register {
+        order: -1;
+        min-width: 120px;
+    }
+
+    #underline {
+        order: 3;
+    }
 
     button>span {
         display: none;
@@ -264,6 +284,7 @@ ul {
 
     button>i.fa-search {
         display: block;
+        border: 1px #0065fc solid;
     }
 
     #accomodations-background {
@@ -282,20 +303,25 @@ ul {
         margin-right: 0px;
         margin-bottom: 10px;
     }
+
     .popular-resize {
         max-height: 200px;
         width: 280px;
         object-fit: cover;
     }
+
     .popular-card {
         flex-wrap: wrap;
     }
+
     .image-resize {
         max-height: 200px;
     }
+
     footer {
         flex-wrap: wrap;
     }
+
     #filter {
         flex-wrap: wrap;
     }
@@ -308,5 +334,15 @@ ul {
 
     #activities-flex>div {
         width: auto;
+    }
+}
+
+@media screen and (min-width: 321px) {
+    #search-bar button>i.fa-search {
+        display: none;
+    }
+
+    .logo-header {
+        width: 75%;
     }
 }
